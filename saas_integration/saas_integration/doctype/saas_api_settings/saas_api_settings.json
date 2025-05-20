@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-06 18:10:10.697667",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_api_settings_section",
+  "customer_api_link",
+  "customer_auth_method",
+  "customer_api_pass_code",
+  "payment_entry_api_section",
+  "payment_api_link",
+  "payment_auth_method",
+  "payment_api_pass_code",
+  "column_break_oatp",
+  "payment_account_paid_from",
+  "payment_account_paid_to",
+  "subscription_api_section",
+  "subscription_api_link",
+  "subscription_auth_method",
+  "subscription_api_pass_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_api_link",
+   "fieldtype": "Data",
+   "label": "Customer API Link"
+  },
+  {
+   "default": "Bearer Token",
+   "fieldname": "customer_auth_method",
+   "fieldtype": "Select",
+   "label": "Customer Auth Method",
+   "options": "Bearer Token"
+  },
+  {
+   "fieldname": "customer_api_pass_code",
+   "fieldtype": "Data",
+   "label": "Customer API Pass Code"
+  },
+  {
+   "fieldname": "customer_api_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Customer API Settings"
+  },
+  {
+   "fieldname": "payment_entry_api_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Entry APi"
+  },
+  {
+   "fieldname": "payment_api_link",
+   "fieldtype": "Data",
+   "label": "Payment API Link"
+  },
+  {
+   "default": "Bearer Token",
+   "fieldname": "payment_auth_method",
+   "fieldtype": "Select",
+   "label": "Payment Auth Method",
+   "options": "Bearer Token"
+  },
+  {
+   "fieldname": "payment_api_pass_code",
+   "fieldtype": "Data",
+   "label": "Payment API Pass Code"
+  },
+  {
+   "fieldname": "subscription_api_section",
+   "fieldtype": "Section Break",
+   "label": "Subscription API"
+  },
+  {
+   "fieldname": "subscription_api_link",
+   "fieldtype": "Data",
+   "label": "Subscription API Link"
+  },
+  {
+   "default": "Bearer Token",
+   "fieldname": "subscription_auth_method",
+   "fieldtype": "Select",
+   "label": "Subscription Auth Method",
+   "options": "Bearer Token"
+  },
+  {
+   "fieldname": "subscription_api_pass_code",
+   "fieldtype": "Data",
+   "label": "Subscription API Pass Code"
+  },
+  {
+   "fieldname": "column_break_oatp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_account_paid_from",
+   "fieldtype": "Link",
+   "label": "Payment Account Paid From",
+   "options": "Account"
+  },
+  {
+   "fieldname": "payment_account_paid_to",
+   "fieldtype": "Link",
+   "label": "Payment Account Paid To",
+   "options": "Account"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-05-16 15:35:52.273015",
+ "modified_by": "Administrator",
+ "module": "Saas Integration",
+ "name": "SaaS API Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
