@@ -1,32 +1,49 @@
-SaaS Integration for ERPNext
-SaaS Integration is a custom Frappe application designed to integrate subscription data from external SaaS platforms into ERPNext. It centralizes customer and billing data, enabling better visibility, automation, and reporting for businesses.
+# SaaS Integration for ERPNext
 
-✨ Features
+**SaaS Integration** is a custom Frappe application designed to integrate subscription data from external SaaS platforms into ERPNext. It centralizes customer and billing data, enabling better visibility, automation, and reporting for businesses.
 
-Automated Data Import: Pulls subscription data from SaaS platforms effortlessly.
-ERPNext Integration: Seamlessly connects with ERPNext for unified data management.
-Flexible Sync Options: Supports real-time or scheduled data synchronization.
-Modular Design: Scalable and adaptable for additional SaaS platforms.
-Extensible: Built to support future integrations and customizations.
+---
 
+## ✨ Features
 
-📦 Installation
+- **Automated Data Import**: Pulls subscription data from SaaS platforms effortlessly.
+- **ERPNext Integration**: Seamlessly connects with ERPNext for unified data management.
+- **Flexible Sync Options**: Supports real-time or scheduled data synchronization.
+- **Modular Design**: Scalable and adaptable for additional SaaS platforms.
+- **Extensible**: Built to support future integrations and customizations.
+
+---
+
+## 📦 Installation
+
 Follow these steps to install the SaaS Integration app on your ERPNext (v15) instance:
-1. Clone the Repository
+
+### 1. Clone the Repository
+
+```bash
 cd ~/frappe-bench/apps
 git clone https://github.com/intencodeindia/Saas-Integration.git
+```
 
-2. Install the App
+### 2. Install the App
+
+```bash
 bench --site your-site-name install-app saas_integration
+```
 
+> **Note**: Replace `your-site-name` with the name of your ERPNext site.
 
-Note: Replace your-site-name with the name of your ERPNext site.
+### 3. Restart Bench
 
-3. Restart Bench
+```bash
 bench restart
+```
 
+---
 
-📂 Project Structure
+## 📂 Project Structure
+
+```
 Saas-Integration/
 ├── saas_integration/      # Core application module
 ├── .github/              # GitHub workflows and configurations
@@ -34,42 +51,59 @@ Saas-Integration/
 ├── license.txt           # License file
 ├── pyproject.toml        # Python project configuration
 └── README.md             # This file
+```
 
+---
 
-📋 Requirements
+## 📋 Requirements
 
-ERPNext: v15.x
-Frappe Framework: v15.x
-Python: 3.10 or higher
+- **ERPNext**: v15.x
+- **Frappe Framework**: v15.x
+- **Python**: 3.10 or higher
 
+---
 
-📜 License
-This project is licensed under the MIT License. See the license.txt file for details.
+## 📜 License
 
-👨‍💻 Maintainers
-Developed and maintained by Intencode India.
+This project is licensed under the MIT License. See the [license.txt](license.txt) file for details.
 
-🤝 Contributing
+---
+
+## 👨‍💻 Maintainers
+
+Developed and maintained by [Intencode India](https://github.com/intencodeindia).
+
+---
+
+## 🤝 Contributing
+
 We welcome contributions! To contribute:
 
-Fork the repository.
+1. Fork the repository.
+2. Create a feature branch:
 
-Create a feature branch:
-git checkout -b feature/your-feature
+   ```bash
+   git checkout -b feature/your-feature
+   ```
 
+3. Commit your changes:
 
-Commit your changes:
-git commit -m "Add your feature"
+   ```bash
+   git commit -m "Add your feature"
+   ```
 
+4. Push to the branch:
 
-Push to the branch:
-git push origin feature/your-feature
+   ```bash
+   git push origin feature/your-feature
+   ```
 
-
-Open a Pull Request.
-
+5. Open a Pull Request.
 
 For major changes, please open an issue first to discuss your proposed changes.
 
-📬 Support
-For questions or support, open an issue on GitHub or contact the maintainers.
+---
+
+## 📬 Support
+
+For questions or support, open an issue on [GitHub](https://github.com/intencodeindia/Saas-Integration/issues) or contact the maintainers.
